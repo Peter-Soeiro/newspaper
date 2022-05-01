@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  margin: 3rem 4rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+}
+
+header {
+  max-width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  div {
+    padding-bottom: 0.7rem;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    img {
+      padding-right: 2rem;
+    }
+  }
+}
+
+nav {
+  display: flex;
+  border: 3px solid #c4c4c4;
+  justify-content: space-around;
+  padding: 1rem 4rem;
+  border-left: none;
+  border-right: none;
+  margin: 0.5rem 0 2rem;
+
+  button {
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+  }
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+
+  .middle {
+  }
+}
+
+article {
+  max-width: 33%;
+  text-align: left;
+  padding: 0 2rem;
+
+  &:not(:last-child) {
+    border-right: 2px solid #c4c4c4;
+  }
+
+  p {
+    padding: 0.8rem 0;
+  }
+
+  img {
+    width: 100%;
+    padding: 0.8rem 0;
+  }
+}
